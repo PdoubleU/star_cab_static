@@ -1,0 +1,68 @@
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 30em) {
+    .menu-btn{
+        padding: 0;
+        display: block;
+        float: right;
+        cursor: pointer;
+        position: relative;
+        margin: 1em;
+        background-color: transparent;
+        border: 0;
+        right: 0;
+        z-index: 6666;
+    }
+    .menu-btn__box{
+            width: 3em;
+            height: 3em;
+            display: flex;
+            position: relative;
+            float: right;
+            background-color: transparent;
+            padding: 0;
+        }
+    .menu-btn__inner{
+            width: 100%;
+            height: 0.4em;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            transition: background-color .1s .1s ease-in-out;
+        }
+
+    .menu-btn__inner::before,
+    .menu-btn__inner::after{
+        content: '';
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 0.4em;
+        background-color: black;
+        position: absolute;
+        transition: transform .1s .05s ease-in-out;
+    }
+    .menu-btn__inner::before{
+        top: -1em;
+        left: 0;
+    }
+    .menu-btn__inner::after{
+        top: 1em;
+        left: 0;
+    }
+    .menu-btn__inner--active.menu-btn__inner{
+        background-color: transparent;
+    }
+    .menu-btn__inner--active.menu-btn__inner::before{
+        transform: translateY(1em) rotate(45deg);
+    }
+    .menu-btn__inner--active.menu-btn__inner::after{
+        transform: translateY(-1em) rotate(-45deg);
+    }
+}

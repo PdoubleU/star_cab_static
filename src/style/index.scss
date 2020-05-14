@@ -1,3 +1,96 @@
-:root {
+//import style library to normalize all diffirences may show up in diffirent browsers:
+@import '../../node_modules/normalize-scss/sass/_normalize.scss';
+//import burger-button stylesheet:
+@import './modules/burger_button.scss';
+
+//create variables for main colors, fonts and other attributes often used in stylesheet:
+$primary-bkg-color: hsl(0, 0, 100);
+$secondary-bkg-color: hsl(200, 10, 50);
+$main-font-color: hsl(240, 0, 15);
+$minor-font-color: hsl(220, 0, 15);
+
+//root style block has box-sizing set to border-box to avoid unexpected behaviour for box elements:
+:root{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+//calc() method in font size assures that the font size will be respond on each window size change
+    font-size: calc(.5em + 1vw);
+    line-height: 1.4;
+}
+body{
+    background-color: white;
+//removes from body initial margin and padding
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.nav-container {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 .05em .1em $secondary-bkg-color;
+}
+.nav-container__inner > * {
+    list-style-type: none;
+    text-decoration: none;
+    & * > * {
+        text-decoration: none;
+    }
+}
+.top-nav{
+    top: 0;
+    height: auto;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+.top-nav--active{
+    transform: translateY(0);
+}
+@media (min-width: 30em) {
+    .nav-container {
+        padding: .625em 1em;
+    }
+    .nav-container__inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1920px;
+        margin: auto;
+        padding: .625em 0;
+    }
+    .home-link {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-left: 0;
+    }
+    .top-nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        transform: translateY(0);
+        margin: 0;
+    & > li > a {
+        display: block;
+        white-space: nowrap;
+        text-transform: lowercase;
+        padding: .3em 1.25em;
+        color: $main-font-color;
+        background: $secondary-bkg-color;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    & > li + li {
+        margin-left: .625em;
+    }
+    }
 }

@@ -8,6 +8,9 @@ $primary-bkg-color: hsl(0, 0, 100);
 $secondary-bkg-color: hsl(200, 10, 50);
 $main-font-color: hsl(240, 0, 15);
 $minor-font-color: hsl(220, 0, 15);
+$z-index-navigation: 100;
+$z-index-burgerbutton: 200;
+$z-index-footer: -100;
 
 //root style block has box-sizing set to border-box to avoid unexpected behaviour for box elements:
 :root{
@@ -17,8 +20,12 @@ $minor-font-color: hsl(220, 0, 15);
     font-size: calc(.5em + 1vw);
     line-height: 1.4;
 }
+html{
+    position:relative;
+    min-height: 100%;
+  }
 body{
-    background-color: white;
+    background-color: $primary-bkg-color;
 //removes from body initial margin and padding
     margin: 0;
     padding: 0;
@@ -30,8 +37,17 @@ body{
 }
 .nav-container {
     position: fixed;
+    top: 0;
     width: 100%;
     box-shadow: 0 .05em .1em $secondary-bkg-color;
+    padding: .625rem 1em;
+    background-color: $primary-bkg-color;
+}
+.nav-container__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .nav-container__inner > * {
     list-style-type: none;
@@ -40,28 +56,49 @@ body{
         text-decoration: none;
     }
 }
+.home-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-left: 0;}
 .top-nav{
+    display: none; //display value for hidden menu!! it will change into flex!!
+    position: absolute;
+    z-index: $z-index-navigation;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
     top: 0;
     height: auto;
-    width: 100vw;
-    background-color: white;
-    position: absolute;
-    justify-content: center;
-    transform: translateY(-100%);
+    width: 100%;
+    padding: .625rem 0 1rem;
+    background-color: $primary-bkg-color;
+    box-shadow: 0 .05em .1em $secondary-bkg-color;
+    & > li > a {
+        white-space: nowrap;
+        text-transform: lowercase;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: .4em 1.4em;
+        background-color: $primary-bkg-color;
+        }
+    & > li + li {
+        margin-top: 1em;
+    }
 }
 .top-nav--active{
-    transform: translateY(0);
+    display: flex;
+    margin: 3.3rem 0 0;
 }
-@media (min-width: 30em) {
-    .nav-container {
-        padding: .625em 1em;
-    }
+@media (min-width: 38.26em) {
     .nav-container__inner {
         display: flex;
         justify-content: space-between;
         max-width: 1920px;
-        margin: auto;
-        padding: .625em 0;
+        margin: 0 auto;
     }
     .home-link {
         display: flex;
@@ -77,20 +114,57 @@ body{
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: flex-end;
-        transform: translateY(0);
         margin: 0;
+        padding: 0;
+        background-color: default;
+        box-shadow: none;
     & > li > a {
         display: block;
         white-space: nowrap;
         text-transform: lowercase;
         padding: .3em 1.25em;
+        font-size: inherit;
         color: $main-font-color;
-        background: $secondary-bkg-color;
         text-decoration: none;
         cursor: pointer;
         }
     & > li + li {
         margin-left: .625em;
+        margin-top: 0;
+        }
     }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+.column {
+     margin-left: 3em;
+     margin-right: 3em;
+}
+p {
+    text-align: justify;
+}
+
+@media (min-width: 43.75em) {
+    main {
+    grid-template-columns: 1fr 1fr;
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: $secondary-bkg-color;
+    color: $minor-font-color;
+    font-size: .675rem;
+    z-index: $z-index-footer;
 }

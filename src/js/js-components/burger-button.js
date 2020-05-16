@@ -1,8 +1,9 @@
-export const menu_button = document.querySelector('.menu-btn');
-export const button_inner = document.querySelector('.menu-btn__inner');
-export const navigation = document.querySelector('.top-nav');
+import $ from "jquery";
+export var $menu_button = $('.menu-btn');
+export var $button_inner = $('.menu-btn__inner');
+export var $navigation = $('.top-nav');
 export const handleClick = () => {
-  button_inner.classList.toggle('menu-btn__inner--active');
-  navigation.classList.toggle('top-nav--active');
+  $button_inner.toggleClass('menu-btn__inner--active');
+  $navigation.toggleClass('top-nav--active');
 }
-menu_button.addEventListener('click', handleClick);
+$menu_button.click(handleClick);

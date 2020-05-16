@@ -40,6 +40,7 @@
     "file-loader": "^6.0.0",
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
@@ -52,6 +53,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@types/autoprefixer": "^9.7.2",
+    "@types/cssnano": "^4.0.0",
+    "@types/jquery": "^3.3.38",
     "normalize-scss": "^7.0.1",
     "requirejs": "^2.3.6"
   }

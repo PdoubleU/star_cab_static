@@ -62,6 +62,10 @@ module.exports = {
       filename: 'style.bundle.css',
     }),
     new HtmlWebpackPlugin({
+      title: 'about_us.html',
+      template: './src/about_us.html',
+    }),
+    new HtmlWebpackPlugin({
       title: 'index.html',
       template: './src/index.html',
     }),

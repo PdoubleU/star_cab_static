@@ -1,4 +1,4 @@
-require('babel-polyfill');
+require ('babel-polyfill');
 require('fetch-ponyfill');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -60,10 +60,6 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.bundle.css',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'about_us.html',
-      template: './src/about_us.html',
     }),
     new HtmlWebpackPlugin({
       title: 'index.html',

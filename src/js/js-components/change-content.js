@@ -1,8 +1,8 @@
 import $ from "jquery";
-export var $home = $('.home');
-export var $about_us = $('.about_us');
-export var $tourist_services = $('.tourist_services');
-export var $contact = $('.contact');
+var $home = $('.home');
+var $about_us = $('.about_us');
+var $tourist_services = $('.tourist_services');
+var $contact = $('.contact');
 
 export function changeContent(e){
     e.preventDefault();

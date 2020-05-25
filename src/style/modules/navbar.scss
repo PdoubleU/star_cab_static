@@ -1,0 +1,101 @@
+@import './variables.scss';
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 .05em .1em $secondary-bkg-color;
+    padding: .625rem 1em;
+    background-color: $primary-bkg-color;
+}
+.nav-container__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.nav-container__inner > * {
+    list-style-type: none;
+    text-decoration: none;
+    & * > * {
+        text-decoration: none;
+    }
+}
+.home-link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-left: 0;}
+.top-nav{
+    display: none; //display value for hidden menu!! it will change into flex!!
+    position: absolute;
+    z-index: $z-index-navigation;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    padding: .625rem 0 1rem;
+    background-color: $primary-bkg-color;
+    box-shadow: 0 .05em .1em $secondary-bkg-color;
+    & > li > a {
+        white-space: nowrap;
+        text-transform: lowercase;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: .4em 1.4em;
+        background-color: $primary-bkg-color;
+        }
+    & > li + li {
+        margin-top: 1em;
+    }
+}
+.top-nav--active{
+    display: flex;
+    margin: 3.3rem 0 0;
+}
+@media (min-width: 38.26em) {
+    .nav-container__inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    .home-link {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-left: 0;
+    }
+    .top-nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    & > li > a {
+        display: block;
+        white-space: nowrap;
+        text-transform: lowercase;
+        padding: .3em 1.25em;
+        font-size: inherit;
+        color: $main-font-color;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    & > li + li {
+        margin-left: .625em;
+        margin-top: 0;
+        }
+    }
+}

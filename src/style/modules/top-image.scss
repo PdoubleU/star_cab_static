@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+.background-img {
+    background-image: url('./images/autosmall.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 2em;
+    width: 100%;
+    min-height: 50vh;
+}
+@media (min-width: 43.75em) {
+    .background-img {
+        background-image: url('./images/autolarge.jpg');
+    }
+}
+.motto {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .logo {
+        opacity: 0.0;
+        width: 12.5em;
+    }
+    & > h2 {
+        opacity: 0.0;
+        font-weight: bold;
+        color: $white-font;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+    }
+}
+@media (min-width: 31.25em){
+    .motto {
+        min-height: 75vh;
+    & .logo {
+        width: 18.75em;
+    }
+    }
+}
+@media (min-width: 43.75em) {
+    .motto {
+        min-height: calc(100vh - 2em);
+    & .logo {
+
+    width: 23.4375em;
+        }
+    }
+}

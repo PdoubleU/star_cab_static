@@ -35,7 +35,7 @@ $z-index-burgerbutton: 200;
             top: 50%;
             transform: translateY(-50%);
             left: 0;
-            transition: background-color .1s .1s ease-in-out;
+            transition: background-color .1s .08s ease-in-out;
         }
 
     .menu-btn__inner::before,

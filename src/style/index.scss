@@ -2,15 +2,8 @@
 @import '../../node_modules/normalize-scss/sass/_normalize.scss';
 //import burger-button stylesheet:
 @import './modules/burger_button.scss';
-
-//create variables for main colors, fonts and other attributes often used in stylesheet:
-$primary-bkg-color: hsl(0, 0, 100);
-$secondary-bkg-color: hsl(200, 10, 50);
-$main-font-color: hsl(240, 0, 15);
-$minor-font-color: hsl(220, 0, 15);
-$z-index-navigation: 100;
-$z-index-burgerbutton: 200;
-$z-index-footer: -100;
+@import './modules/scroll_top_button.scss';
+@import './modules/variables.scss';
 
 //root style block has box-sizing set to border-box to avoid unexpected behaviour for box elements:
 :root{
@@ -134,6 +127,29 @@ body{
         }
     }
 }
+.background-img {
+    background-image: url('./images/autosmall.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 2em;
+    width: 100%;
+    min-height: 50vh;
+}
+@media (min-width: 31.25em) {
+    .background-img {
+        min-height: 75vh;
+    }
+}
+@media (min-width: 43.75em) {
+    .background-img {
+        background-image: url('./images/autolarge.jpg');
+        min-height: calc(100vh - 2em);
+    }
+}
+p {
+    text-align: justify;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -145,16 +161,13 @@ main {
 @supports (display: grid) {
     main {
     display: grid;
-    grid-template-areas: "column"
+    grid-template-areas:
+                         "column"
                          "column";
     margin-top: 4em;
     margin-bottom: 3em;
     }
 }
-p {
-    text-align: justify;
-}
-
 @media (min-width: 43.75em) {
     main {
         display: flex;

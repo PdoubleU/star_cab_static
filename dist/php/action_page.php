@@ -13,7 +13,7 @@
 	$message = $_POST['message'];
 	$document_root = $_SERVER['DOCUMENT_ROOT'];
 	$output = $fname. "\t".$email. "\t".$message. "\n";
-	$wp = fopen("$document_root/./order.txt", 'ab');
+	$wp = fopen("$document_root/order.txt", 'ab');
 
 	if(!$wp) {
 		echo "<p><strong>Nie znajduje pliku!</strong></p>";

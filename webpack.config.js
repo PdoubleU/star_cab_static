@@ -10,7 +10,7 @@ module.exports = {
     'fetch-ponyfill',
     './src/js/main.js',
     './src/style/index.scss',
-    './src/assets/logo.png',
+    './src/assets/logo.svg',
     './src/assets/autosmall.jpg',
     './src/assets/autolarge.jpg'
   ],

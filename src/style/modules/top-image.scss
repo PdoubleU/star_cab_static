@@ -14,7 +14,7 @@
     }
 }
 .motto {
-    min-height: 50vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,14 +36,13 @@
         min-height: 75vh;
     & .logo {
         width: 18.75em;
-    }
+        }
     }
 }
 @media (min-width: 43.75em) {
     .motto {
         min-height: calc(100vh - 2em);
     & .logo {
-
     width: 23.4375em;
         }
     }

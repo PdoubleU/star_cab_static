@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
   <head>
   	<meta charset="utf-8" />
-    <title>Descriptions of sessions</title>
-    <link rel="stylesheet" href="css/c08.css" />
+    <title></title>
   </head>
   <body>
-    <header>
-      <h1>THE MAKER BUS</h1>
-    </header>
-
     <span id="home" class="column">
       <h2>Wprowadzenie do świata 3D</h2>
         <p>
@@ -190,9 +185,9 @@
         </p>
     </span>
 
-    <span id="contact" class="column">
-      <h2>Skontaktuj się z nami</h2>
-      <form action="./php/action_page.php" method="POST">
+    <span id="contact" class="column_form">
+      <h2 class="contact_form_header">Skontaktuj się z nami</h2>
+      <form class="contact_form" action="./php/action_page.php" method="POST">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="email">Email adress:</label>
@@ -200,10 +195,9 @@
         <label for="confirm_email">Confirm email:</label>
         <input type="text" id="confirm_email" name="confirm_email"><br><br>
         <label for="message">Your message:</label>
-        <input type="text" id="message" name="message"><br><br>
-        <input type="submit" value="Wyślij">
+        <textarea type="text" id="message" name="message"></textarea><br><br>
+        <input type="submit" value="Wyślij" class="sub_btn">
       </form>
-      <button class="scroll_btn"></button>
     </span>
 
 

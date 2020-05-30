@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.column_form {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+    & > .sub_btn {
+        display: inline-block;
+        margin-top: 2em;
+        padding: .6em 1.2em;
+        align-self: center;
+        letter-spacing: .12rem;
+        font-size: inherit;
+        text-transform: uppercase;
+        border: none;
+        height: auto;
+        background-color: $secondary-bkg-color;
+        &:hover {
+            background-color: $tertiary-bkg-color;
+            transition: .2s ease-in;
+        }
+    }
+    & > label {
+        margin-top: 1em;
+    }
+}
+textarea {
+    width: 75vw;
+    resize: vertical;
+    font-size: inherit;
+    font-family: inherit;
+}
+input {
+    height: 2em;
+    font-size: inherit;
+}
+
+@media (min-width:  43.75em){
+    .column_form {
+        width: 50vw;
+    }
+    textarea {
+    width: 50vw;
+    }
+}

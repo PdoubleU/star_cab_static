@@ -1,4 +1,5 @@
 import $ from "jquery";
+
 var $menu_button = $('.menu-btn');
 var $button_inner = $('.menu-btn__inner');
 var $navigation = $('.top-nav');

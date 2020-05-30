@@ -187,7 +187,7 @@
 
     <span id="contact" class="column_form">
       <h2 class="contact_form_header">Skontaktuj się z nami</h2>
-      <form class="contact_form" action="./php/action_page.php" method="POST">
+      <form class="contact_form" action="./php/action_page.php" method="post" onsubmit="openModal();" >
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="email">Email adress:</label>
@@ -199,7 +199,6 @@
         <input type="submit" value="Wyślij" class="sub_btn">
       </form>
     </span>
-
 
   </body>
 </html>

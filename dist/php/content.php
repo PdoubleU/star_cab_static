@@ -187,7 +187,7 @@
 
     <span id="contact" class="column_form">
       <h2 class="contact_form_header">Skontaktuj się z nami</h2>
-      <form class="contact_form" action="./php/action_page.php" method="post" onsubmit="openModal();" >
+      <form id="contact_form" class="contact_form" action="./php/action_page.php" method="post">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="email">Email adress:</label>
@@ -196,7 +196,7 @@
         <input type="text" id="confirm_email" name="confirm_email"><br><br>
         <label for="message">Your message:</label>
         <textarea type="text" id="message" name="message"></textarea><br><br>
-        <input type="submit" value="Wyślij" class="sub_btn">
+        <input type="submit" value="Wyślij" class="sub_btn" id="post-data-btn">
       </form>
     </span>
 

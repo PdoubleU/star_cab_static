@@ -186,8 +186,17 @@
     </span>
 
     <span id="contact" class="column_form">
+      <div id="modal" class="modal">
+        <div class="modal_backdrop"></div>
+        <div class="modal_body">
+
+        <button id="close" class="modal_btn">Zamknij okno</button>
+        <h2>Formularz został wysłany</h2>
+
+        </div>
+      </div>
       <h2 class="contact_form_header">Skontaktuj się z nami</h2>
-      <form id="contact_form" class="contact_form" action="./php/action_page.php" method="post">
+      <form class="contact_form" action="./php/action_page.php" method="post">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="email">Email adress:</label>

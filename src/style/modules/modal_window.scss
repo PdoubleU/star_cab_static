@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './btn_model.scss';
+
+.modal {
+    display: none;
+}
+
+.modal_backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(200, 50, 10, 0.5);
+}
+
+.modal_body {
+    position: fixed;
+    top: 3em;
+    bottom: 3em;
+    right: 20%;
+    left: 20%;
+    padding: 2em 3em;
+    background-color: $primary-bkg-color;
+    overflow: auto;
+}
+
+.modal_btn {
+    @include btn;
+}

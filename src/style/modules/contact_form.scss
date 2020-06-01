@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './btn_model.scss';
 
 .column_form {
     display: flex;
@@ -11,20 +12,7 @@
     justify-content: center;
     margin-bottom: 2em;
     & > .sub_btn {
-        display: inline-block;
-        margin-top: 2em;
-        padding: .6em 1.2em;
-        align-self: center;
-        letter-spacing: .12rem;
-        font-size: inherit;
-        text-transform: uppercase;
-        border: none;
-        height: auto;
-        background-color: $secondary-bkg-color;
-        &:hover {
-            background-color: $tertiary-bkg-color;
-            transition: .2s ease-in;
-        }
+        @include btn;
     }
     & > label {
         margin-top: 1em;

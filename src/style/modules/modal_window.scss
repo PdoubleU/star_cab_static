@@ -3,6 +3,7 @@
 
 .modal {
     display: none;
+    position: relative;
 }
 
 .modal_backdrop {
@@ -16,10 +17,15 @@
 
 .modal_body {
     position: fixed;
-    top: 3em;
-    bottom: 3em;
-    right: 20%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
     padding: 2em 3em;
     background-color: $primary-bkg-color;
     overflow: auto;

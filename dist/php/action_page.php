@@ -5,7 +5,7 @@
 	$message = $_POST['message'];
 	$document_root = $_SERVER['DOCUMENT_ROOT'];
 	$output = $fname. "\t".$email. "\t".$message. "\n";
-	$wp = fopen("$document_root/starcab.wroclaw.pl/data/order.txt", 'ab');
+	$wp = fopen("$document_root/data/order.txt", 'ab'); //before moving on server check directory!!! it may cause problems with writing/reading file
 
 
 	flock($wp, LOCK_EX);

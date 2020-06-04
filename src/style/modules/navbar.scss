@@ -35,21 +35,23 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 0;
+    opacity: 0;
     left: 0;
     top: 0;
-    height: auto;
     width: 100%;
     padding: .625rem 0 1rem;
     background-color: $primary-bkg-color;
     box-shadow: 0 .05em .1em $secondary-bkg-color;
+    transition: opacity .5s linear .3s;
     & > li > a {
         white-space: nowrap;
         text-transform: lowercase;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         cursor: pointer;
         padding: .4em 1.4em;
-        background-color: $primary-bkg-color;
+        background-color: transparent;
         }
     & > li + li {
         margin-top: 1em;
@@ -57,11 +59,12 @@
 }
 .top-nav--active{
     display: flex;
-    margin: 3.3rem 0 0;
+    opacity: 1;
+    margin: 3.12rem 0 0;
+    height: auto;
 }
-@media (min-width: 38.26em) {
+@media (min-width: 40em) {
     .nav-container__inner {
-        display: flex;
         justify-content: space-between;
         max-width: 1920px;
         margin: 0 auto;
@@ -80,6 +83,7 @@
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: flex-end;
+        opacity: 1;
         margin: 0;
         padding: 0;
         background-color: transparent;
@@ -88,7 +92,7 @@
         display: block;
         white-space: nowrap;
         text-transform: lowercase;
-        padding: .3em 1.25em;
+        padding: .3em 1em;
         font-size: inherit;
         color: $main-font-color;
         text-decoration: none;

@@ -197,13 +197,13 @@
       <h2 class="contact_form_header">Skontaktuj się z nami</h2>
       <form class="contact_form" action="./php/action_page.php" method="post">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname"><br>
         <label for="email">E-mail adress:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email"><br>
         <label for="confirm_email">Confirm email:</label>
-        <input type="email" id="confirm_email" name="confirm_email"><br><br>
+        <input type="email" id="confirm_email" name="confirm_email"><br>
         <label for="message">Your message:</label>
-        <textarea type="text" id="message" name="message"></textarea><br><br>
+        <textarea type="text" id="message" name="message"></textarea><br>
         <input type="submit" value="Wyślij" class="sub_btn" id="post-data-btn">
       </form>
     </span>

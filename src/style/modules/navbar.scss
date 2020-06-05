@@ -21,12 +21,12 @@
         text-decoration: none;
     }
 }
-.home-link {
+.nav-header {
     display: flex;
     align-items: center;
     white-space: nowrap;
     text-transform: uppercase;
-    margin-left: 0;
+    margin: 0;
 }
 .top-nav{
     display: none; //display value for hidden menu!! it will change into flex!!
@@ -68,13 +68,6 @@
         justify-content: space-between;
         max-width: 1920px;
         margin: 0 auto;
-    }
-    .home-link {
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        text-transform: uppercase;
-        margin-left: 0;
     }
     .top-nav {
         position: relative;

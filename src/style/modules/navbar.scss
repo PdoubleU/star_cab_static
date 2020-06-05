@@ -28,6 +28,7 @@
     text-transform: uppercase;
     margin: 0;
 }
+
 .top-nav{
     display: none; //display value for hidden menu!! it will change into flex!!
     position: absolute;
@@ -84,13 +85,9 @@
         box-shadow: none;
     & > li > a {
         display: block;
-        white-space: nowrap;
-        text-transform: lowercase;
         padding: .3em 1em;
         font-size: inherit;
         color: $main-font-color;
-        text-decoration: none;
-        cursor: pointer;
         }
     & > li + li {
         margin-left: .625em;

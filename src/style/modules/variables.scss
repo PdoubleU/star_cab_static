@@ -1,6 +1,4 @@
 //create variables for main colors, fonts and other attributes often used in stylesheet:
-@import "./fontawesome-free-5.13.0-web/scss/fontawesome.scss";
-@import "./fontawesome-free-5.13.0-web/scss/solid.scss";
 
 $primary-bkg-color: hsl(0, 0, 100);
 $secondary-bkg-color: hsl(200, 10, 50);
@@ -11,4 +9,3 @@ $white-font: hsl(0, 0, 100);
 $z-index-navigation: 100;
 $z-index-burgerbutton: 200;
 $z-index-footer: -100;
-$fa-font-path: './webfonts';

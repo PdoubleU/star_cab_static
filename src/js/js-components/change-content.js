@@ -8,7 +8,8 @@ var $contact = $('.contact');
 export function changeContent(e){
     e.preventDefault();
     let $className = "#" + this.className;
-    $('#content').load(`./php/content.php ${$className}`);
+    let $fileName = this.className;
+    $('#content').load(`./php/${$fileName}.php ${$className}`);
   };
 
 $home.click(changeContent);

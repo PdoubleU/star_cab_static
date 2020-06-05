@@ -1,5 +1,4 @@
 @import './variables.scss';
-@import './fontawesome-free-5.13.0-web/scss/_variables.scss';
 
 .scroll_btn {
     position: fixed;
@@ -11,12 +10,8 @@
     height: 3em;
     bottom: 2em;
     right: 3em;
-    &::after {
-        content: $fa-var-chevron-up;
-        @extend %fa-icon;
-        @extend .fas;
-        @extend .fa;
-        font-size: 2em;
+    & > img {
+        max-height: 1.3em;
     }
 }
 .scroll_btn--active {

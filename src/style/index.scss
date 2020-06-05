@@ -28,6 +28,7 @@ body{
 //removes from body initial margin and padding
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 *,
 *::before,

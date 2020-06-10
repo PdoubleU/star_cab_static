@@ -8,18 +8,18 @@ module.exports = {
   entry: [
     'babel-polyfill',
     'fetch-ponyfill',
-    './src/js/main.js',
-    './src/style/index.scss',
-    './src/assets/logo.svg',
-    './src/assets/autosmall.jpg',
-    './src/assets/autolarge.jpg'
+    './src-en/js/main.js',
+    './src-en/style/index.scss',
+    './src-en/assets/logo.svg',
+    './src-en/assets/autosmall.jpg',
+    './src-en/assets/autolarge.jpg'
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist-en'),
     filename: 'main.bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist-en'),
     compress: true,
     port: 9000,
   },
@@ -66,7 +66,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'index.html',
-      template: './src/index.html',
+      template: './src-en/index.html',
     })
   ]
 };

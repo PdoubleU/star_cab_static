@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+.scroll_btn {
+    position: fixed;
+    display: none;
+    background-color: $primary-bkg-color;
+    box-shadow: 0.07em .07em .1em $secondary-bkg-color;
+    border: none;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 3em;
+    & > img {
+        max-height: 1.3em;
+    }
+}
+.scroll_btn--active {
+    display: inline-block;
+    animation: shake 2s linear;
+}
+
+@media (min-width: 67.5em) {
+    .scroll_btn {
+        display: none;
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-0.3em);
+    }
+    20%,
+    40%,
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-0.2em);
+    }
+}

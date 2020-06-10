@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 4em auto 6em auto;
+}
+@supports (display: grid) {
+    main {
+    display: grid;
+    grid-template-areas:
+                         "column"
+                         "column"
+                         "column";
+    margin-top: 4em;
+    margin-bottom: 6em;
+    }
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.column_form {
+    margin: auto;
+}
+.column + .column::before {
+    margin: 3em auto 3em;
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: $secondary-bkg-color;
+}
+
+@media (min-width: 43.75em) {
+    main {
+        max-width: 80%;
+        & .column {
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+    }
+    @supports (display: grid) {
+        main {
+            display: grid;
+            grid-template-areas: "column"
+                                 "column"
+                                 "column";
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}

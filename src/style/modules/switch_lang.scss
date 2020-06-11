@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.switch_lang {
+    position: fixed;
+    top: 50vh;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-bkg-color;
+    color: $white-font;
+    font-size: 2rem;
+    width: 3em;
+    height: auto;
+}

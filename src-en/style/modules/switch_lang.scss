@@ -2,13 +2,37 @@
 
 .switch_lang {
     position: fixed;
-    top: 50vh;
-    left: 5%;
     display: flex;
-    flex-direction: column;
-    background-color: $secondary-bkg-color;
-    color: $white-font;
-    font-size: 2rem;
-    width: 3em;
-    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-bkg-color;
+    box-shadow: 0.07em .07em .1em $secondary-bkg-color;
+    border: none;
+    width: auto;
+    height: 3em;
+    bottom: 2em;
+    left: 3em;
+    & .switch_lang--en
+      .switch_lang--pl {
+        position: absolute;
+        width: auto;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    & .switch_lang--en {
+        & > a {
+            text-decoration: none;
+            font-size: inherit;
+            padding: 1em;
+        }
+      }
+    & .switch_lang--pl {
+        border-right: 2px solid $secondary-bkg-color;
+        & > a {
+            text-decoration: none;
+            font-size: inherit;
+            padding: 1em;
+        }
+      }
 }

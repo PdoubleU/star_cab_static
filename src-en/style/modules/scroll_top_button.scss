@@ -6,12 +6,12 @@
     background-color: $primary-bkg-color;
     box-shadow: 0.07em .07em .1em $secondary-bkg-color;
     border: none;
-    width: 3em;
-    height: 3em;
-    bottom: 2em;
-    right: 3em;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 3rem;
     & > img {
-        max-height: 1.3em;
+        max-height: 1.3rem;
     }
 }
 .scroll_btn--active {

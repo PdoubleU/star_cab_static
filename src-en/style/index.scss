@@ -39,3 +39,9 @@ body{
 p {
     text-align: justify;
 }
+a:link,
+a:visited,
+a:hover,
+a:checked {
+    color: $main-font-color;
+}

@@ -1,15 +1,33 @@
 @import './variables.scss';
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     white-space: nowrap;
     background-color: $secondary-bkg-color;
     color: $minor-font-color;
     font-size: .675rem;
     z-index: $z-index-footer;
 }
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2em 0 3.2em;
+}
+@media (min-width: 43.75em) {
+    .footer-content {
+        padding: 2em 6em 3.4em;
+    }
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-bkg-color;
+    color: $main-font-color;
+    width: 100%;
+}
+

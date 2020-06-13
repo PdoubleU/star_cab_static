@@ -26,9 +26,14 @@
     text-align: center;
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 2em 3em;
+    padding: 1.5em 1em;
     background-color: $primary-bkg-color;
     overflow: auto;
+}
+@media (min-width: 43.75em) {
+    .modal_body {
+        padding: 2em 3em;
+    }
 }
 
 .modal_btn {

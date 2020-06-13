@@ -7,6 +7,7 @@
     box-shadow: 0 .05em .1em $secondary-bkg-color;
     padding: .625rem 1em;
     background-color: $primary-bkg-color;
+    user-select: none;
 }
 .nav-container__inner {
     display: flex;

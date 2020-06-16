@@ -15,8 +15,7 @@
           Więcej informacji na stronie:
 
             <br> <br>
-
-          <a href='https://startravel.wroclaw.pl'>Star Travel Wrocław</a>
+          <a href='https://startravel.wroclaw.pl' >Star Travel Wrocław</a>
         </p>
     </article>
 

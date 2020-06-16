@@ -9,26 +9,13 @@
     <article id="tourist_services" class="column">
       <h2>Our trips</h2>
         <p>
-          Przyjdź i przekonaj się, jak tworzyć modele 3D,
-          które następnie zrobisz w naszym autobusie! Poznasz
-          dokładnie to samo oprogramowanie do modelowania 3D,
-          które jest używane przez wielu profesjonalistów na świecie,
-          między innymi inżynierów, projektantów itd. Opracuj i przetestuj
-          rozwiązania w trakcie zabawnej i interesującej sesji prowadzonej
-          przez Bellę Stone, która zawodowo zajmuje się robotami.
-        </p>
-    </article>
+          We orginize tours in Wrocław and sourroundings.
+          We can take you to most beautiful European cities: Prague, Drezden or Kraków.
+          If you think about a specific place to visit - let us know - we will take you there.
+          For more information just go to our other website:
+            <br> <br>
 
-    <article id="tourist_services"  class="column">
-      <h2>Our trips</h2>
-        <p>
-          Przyjdź i przekonaj się, jak tworzyć modele 3D,
-          które następnie zrobisz w naszym autobusie! Poznasz
-          dokładnie to samo oprogramowanie do modelowania 3D,
-          które jest używane przez wielu profesjonalistów na świecie,
-          między innymi inżynierów, projektantów itd. Opracuj i
-          przetestuj rozwiązania w trakcie zabawnej i interesującej
-          sesji prowadzonej przez Bellę Stone, która zawodowo zajmuje się robotami.
+            <a href="https://startravel.wroclaw.pl">Star Travel Wroclaw</a>
         </p>
     </article>
 

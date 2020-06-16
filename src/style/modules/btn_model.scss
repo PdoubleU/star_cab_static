@@ -10,8 +10,12 @@
     border: none;
     height: auto;
     background-color: $secondary-bkg-color;
+    appearance: none;
     &:hover {
         background-color: $tertiary-bkg-color;
         transition: .2s ease-in;
+    }
+    button {
+        appearance: none;
     }
 }

@@ -4,6 +4,7 @@
 .modal {
     display: none;
     position: relative;
+    z-index: $z-index-modal;
 }
 
 .modal_backdrop {
@@ -27,7 +28,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     padding: 1.5em 1em;
-    background-color: $primary-bkg-color;
+    background-color:white;
     overflow: auto;
 }
 @media (min-width: 43.75em) {

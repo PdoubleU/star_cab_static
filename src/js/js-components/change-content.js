@@ -13,6 +13,7 @@ export function changeContent(e){
     let $contentOffset = ($('#content').offset().top) - 100;
     $('#content').load(`./php/${$fileName}.php ${$className}`);
     $('html').animate({scrollTop: $contentOffset}, 500);
+    $('body').animate({scrollTop: $contentOffset}, 500);
     handleClick();
     return false;
   };

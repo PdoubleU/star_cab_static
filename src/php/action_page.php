@@ -18,7 +18,5 @@
 	fwrite($wp, $output);
 	fclose($wp);
 
-
-
 	mail($to, $subject, $msg_details, $header);
 ?>

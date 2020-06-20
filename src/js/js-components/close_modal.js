@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 var $main = $('main');
 
-export function closeModal(){
+export default closeModal = () => {
     let $disable_input = $('.contact_form').find('*');
     $('.modal').css({display: "none"});
     $('.message').remove();

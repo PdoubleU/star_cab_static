@@ -23,10 +23,13 @@ textarea {
     resize: vertical;
     font-size: inherit;
     font-family: inherit;
+    border: 1px solid $main-font-color;
 }
 input {
     height: 2em;
     font-size: inherit;
+    appearance: none;
+    border: 1px solid $main-font-color;
 }
 
 @media (min-width:  43.75em){

@@ -5,4 +5,4 @@ import {scroll, scrollTop} from "./js-components/scroll_button_mobile";
 import {slideIn} from "./js-components/onload_head_text";
 import {sentData} from "./js-components/submit_form";
 import {closeModal} from "./js-components/close_modal";
-import {checkEmail} from "./js-components/check_email";
+import {changeBorder} from "./js-components/input_border";

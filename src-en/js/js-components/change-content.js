@@ -6,7 +6,7 @@ var $about_us = $('.about_us');
 var $tourist_services = $('.tourist_services');
 var $contact = $('.contact');
 
-export function changeContent(e){
+export default function changeContent(e){
   e.preventDefault();
   let $className = "#" + this.className;
   let $fileName = this.className;

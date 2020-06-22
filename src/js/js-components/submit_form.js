@@ -31,10 +31,10 @@ export function sentData(e) {
             showModal(`${$FNAME}, <br/> formularz został wysłany. <br/><br/>
                 Skontaktujemy się z tobą  w ciągu 24 godzin. <br/><br/>
                 Dziękujęmy!`);
-                $FNAME.val('');
-                $EMAIL_ONE.val('');
-                $EMAIL_TWO.val('');
-                $MSG.val('');})
+                $FNAME = '';
+                $EMAIL_ONE = '';
+                $EMAIL_TWO = '';
+                $MSG = '';})
         .fail(function(){
             showModal(`${$FNAME}, <br/> coś poszło nie tak. <br/><br/>
                 Spróbuj ponownie lub napisz bezpośrednio na nasz adres email: <br/>

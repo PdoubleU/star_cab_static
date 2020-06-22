@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" content="text/html">
+    <title>Star Cab</title>
+    <meta name="description" content="Transport company website presenting transport services in Wroclaw">
+    <meta name="keywords" content="shuttle service, transport service, shuttle in Wroclaw, hotel shuttle, city shuttle">
+    <meta name="author" content="Piotr Witasik">
+    <meta charset="UTF-8" content="text/html" lang="pl">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico">
-    <title>Star Cab</title>
 </head>
 <body>
     <nav class="nav-container">
         <div class="nav-container__inner">
             <p class="nav-header">Star Cab Wrocław</p>
             <ul class="top-nav">
-                <li><a class="home" href="./php/home.php">Home</a></li>
-                <li><a class="about_us" href="./php/about_us.php">About Us</a></li>
-                <li><a class="tourist_services" href="./php/tourist_services.php">Tourist Services</a></li>
-                <li><a class="contact" href="./php/contact.php">Contact</a></li>
+                <li><a class="home" href="./php/home.php" target="_self">Home</a></li>
+                <li><a class="about_us" href="./php/about_us.php" target="_self">About Us</a></li>
+                <li><a class="tourist_services" href="./php/tourist_services.php" target="_self">Tourist Services</a></li>
+                <li><a class="contact" href="./php/contact.php" target="_self">Contact</a></li>
             </ul>
             <button class="menu-btn">
                 <span class="menu-btn__box">
@@ -26,10 +29,10 @@
 
     <div id="switch_lang" class="switch_lang">
         <div class="switch_lang--pl">
-            <a href="../" lang="pl" hreflang="pl">PL</a>
+            <a href="../" lang="pl" hreflang="pl" target="_self">PL</a>
         </div>
         <div class="switch_lang--en">
-            <a href="/en/" lang="en" hreflang="en">EN</a>
+            <a href="/en/" lang="en" hreflang="en" target="_self">EN</a>
         </div>
     </div>
 
@@ -37,8 +40,8 @@
         <div class="background-img">
             <div class="motto">
                 <h2 class="motto_header">Wherever you need to go</h2>
-                <img class="logo" src="./images/logo.svg">
-            </img>
+                <img class="logo" src="./images/logo.svg" alt="company's logo">
+            </div>
         </div>
     </header>
 
@@ -68,7 +71,7 @@
     </main>
 
         <button class="scroll_btn">
-            <img src="./images/chevron-up.svg">
+            <img src="./images/chevron-up.svg" alt="^">
         </button>
 
     <footer class="footer">

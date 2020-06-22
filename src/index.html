@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" content="text/html">
+    <title>Star Cab</title>
+    <meta name="description" content="Strona wizytówka firmy świadczącej usługi transportowe i przewozowe na terenie miasta Wrocław oraz w Polsce">
+    <meta name="keywords" content="transport osobowy, pasażerski, transport na terenie miasta Wrocław, transport krajowy w Polsce, transport hotelowy, usługi transportu i przewozu">
+    <meta name="author" content="Piotr Witasik">
+    <meta charset="UTF-8" content="text/html" lang="pl">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico">
-    <title>Star Cab</title>
 </head>
 <body>
     <nav class="nav-container">
@@ -16,7 +19,7 @@
                 <li><a class="tourist_services" href="./php/tourist_services.php">Turystyka</a></li>
                 <li><a class="contact" href="./php/contact.php">Kontakt</a></li>
             </ul>
-            <button class="menu-btn">
+            <button class="menu-btn" aria-label="open menu">
                 <span class="menu-btn__box">
                     <span class="menu-btn__inner"></span>
                 </span>
@@ -25,10 +28,10 @@
     </nav>
 
     <div id="switch_lang" class="switch_lang">
-        <div class="switch_lang--pl">
+        <div class="switch_lang--pl" aria-label="polish language">
             <a href="./" lang="pl" hreflang="pl">PL</a>
         </div>
-        <div class="switch_lang--en">
+        <div class="switch_lang--en" aria-label="english language">
             <a href="/en/" lang="en" hreflang="en">EN</a>
         </div>
     </div>
@@ -37,8 +40,8 @@
         <div class="background-img">
             <div class="motto">
                 <h2 class="motto_header">Gdziekolwiek chcesz jechać</h2>
-                <img class="logo" src="./images/logo.svg">
-            </img>
+                <img class="logo" src="./images/logo.svg" alt="logo firmy">
+            </div>
         </div>
     </header>
 
@@ -81,8 +84,8 @@
           </article>
     </main>
 
-        <button class="scroll_btn">
-            <img src="./images/chevron-up.svg">
+        <button class="scroll_btn" aria-label="scroll up button">
+            <img src="./images/chevron-up.svg" alt="^">
         </button>
 
     <footer class="footer">

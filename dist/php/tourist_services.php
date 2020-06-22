@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="utf-8" />
-    <title></title>
-  </head>
-  <body>
-
-
-
-  </body>
-</html>
-
-<!DOCTYPE html>
-<html>
 <head>
     <title>Star Cab</title>
     <meta name="description" content="Strona wizytówka firmy świadczącej usługi transportowe i przewozowe na terenie miasta Wrocław oraz w Polsce">

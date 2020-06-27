@@ -1,0 +1,32 @@
+#Redirecting http traffic on https:
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{HTTP_HOST} starcab.wroclaw.pl
+	RewriteCond "%{THE_REQUEST}" "^.*/index\.(php|htm|html) " [NC]
+	RewriteRule ^(.*)index\.(php|htm|html)$ https://starcab.wroclaw.pl/$1 [R=301,NC,L]
+
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} starcab.wroclaw\.pl$ [NC]
+	RewriteRule .* https://starcab.wroclaw.pl%{REQUEST_URI} [R=301,L]
+	RewriteCond %{HTTP_HOST} www\.starcab.wroclaw\.pl$ [NC]
+	RewriteRule .* https://starcab.wroclaw.pl%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{HTTP_HOST} starcab.wroclaw.pl
+	RewriteCond "%{THE_REQUEST}" "^.*/index\.(php|htm|html) " [NC]
+	RewriteRule ^(.*)index\.(php|htm|html)$ https://www.starcab.wroclaw.pl/$1 [R=301,NC,L]
+
+
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} starcab.wroclaw\.pl$ [NC]
+	RewriteRule .* https://www.starcab.wroclaw.pl%{REQUEST_URI} [R=301,L]
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteCond %{HTTP_HOST} starcab.wroclaw\.pl$ [NC]
+	RewriteRule .* https://www.starcab.wroclaw.pl%{REQUEST_URI} [R=301,L]
+</IfModule>

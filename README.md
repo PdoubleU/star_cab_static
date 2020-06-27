@@ -8,19 +8,19 @@ During conceptual works, I have been relying on the Mobile First approach. Befor
 is abiding by Accessible Web Design rules. Furthermore, the website was tested on all common browsers, Internet Explorer and Safari included, to be sure that all users will be satisfied with the overall experience.
 
 I have used following technologies:
-    * HTML5
-    * Preprocessor SASS
-    * Library JQuery
-    * PHP
+    1. **HTML5**
+    2. **Preprocessor SASS**
+    3. **Library JQuery**
+    4. **PHP**
 
 
 ## Used tools:
 
 The followed tools were used to finalize project:
-    * Visual Studio Code
-    * GIT - as a control version system
-    * Webpack - to put all project's elements together into joined files ready to deploy
-    * Many popular plugins for Webpack to make production more efficient and easier.
+    1. **Visual Studio Code**
+    2. **GIT - as a control version system**
+    3. **Webpack - to put all project's elements together into joined files ready to deploy**
+    4. **Many popular plugins for Webpack to make production more efficient and easier**
 
 ## Interesting facts about project:
 Initial commit was made on May 14th and I has taken about 12 days of full time work, which gives around 80 hours.

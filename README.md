@@ -2,6 +2,7 @@
 
 Website presents local transportation company. Provides simple information (adress, services, etc.) and allows to contact with the company owners by form. It is available in two languages: polish and english.
 
+
 ## Used technologies and approaches
 
 During conceptual works, I have been relying on the Mobile First approach. Before finishing the project I made sure that the website
@@ -9,24 +10,24 @@ is abiding by Accessible Web Design rules. Furthermore, the website was tested o
 
 I have used following technologies:
 
-
-    1. __HTML5__
-    2. __Preprocessor SASS__
-    3. __Library JQuery__
-    4. __PHP__
+    1. HTML5
+    2. Preprocessor SASS
+    3. Library JQuery
+    4. PHP
 
 
 ## Used tools:
 
 The followed tools were used to finalize project:
 
-
-    1. __Visual Studio Code__
-    **2. GIT - as a control version system**
-    __3. *Webpack - to put all project's elements together into joined files ready to deploy__
+    1. Visual Studio Code
+    2. GIT - as a control version system
+    3. Webpack - to put all project's elements together into joined files ready to deploy
     4. Many popular plugins for Webpack to make production more efficient and easier
 
+
 ## Interesting facts about project:
+
 Initial commit was made on May 14th and I has taken about 12 days of full time work, which gives around 80 hours.
 As a first project the work-time seems to be quite long but all issues that I had to handle, gave me experience that will be an advantage during the next projects that are in my head.
 

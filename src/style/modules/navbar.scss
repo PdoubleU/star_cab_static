@@ -8,6 +8,7 @@
     padding: .625rem 1em;
     background-color: $primary-bkg-color;
     user-select: none;
+    z-index: $z-index-navigation;
 }
 .nav-container__inner {
     display: flex;
@@ -33,7 +34,6 @@
 .top-nav{
     display: none; //display value for hidden menu!! it will change into flex!!
     position: absolute;
-    z-index: $z-index-navigation;
     justify-content: center;
     flex-direction: column;
     align-items: center;

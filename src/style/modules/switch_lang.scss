@@ -3,6 +3,7 @@
 .switch_lang {
     position: fixed;
     display: flex;
+    z-index: $z-index-switch-lang;
     flex-direction: row;
     justify-content: center;
     align-items: center;

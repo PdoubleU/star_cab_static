@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.name,
+.email,
+.msg {
+    position: absolute;
+    visibility: hidden;
+    top: 8em;
+    left: 0;
+    width: fit-content;
+    padding: 1.3em 2em;
+    background-color: $alert-bkg-color;
+    color: $alert-font-color;
+    font-size: 0.6rem;
+    z-index: $z-index-alert;
+    transition: visibility .5s ease-in;
+}
+.name::before,
+.email::before,
+.msg::before {
+    content: '';
+    position: absolute;
+    bottom: 3.5em;
+    left: 1.2em;
+    border: 1em solid;
+    border-color: transparent transparent $alert-bkg-color;
+}

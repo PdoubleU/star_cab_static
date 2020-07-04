@@ -61,16 +61,28 @@
           <h2 class="contact_form_header">Contact with us</h2>
 
           <form class="contact_form" action="./php/action_page.php" method="post">
-            <label for="fname">Your first name:</label>
-            <input type="text" id="fname" name="fname">
-            <label for="email">Your e-mail adress:</label>
-            <input type="email" id="email" name="email">
-            <label for="confirm_email">Confirm e-mail:</label>
-            <input type="email" id="confirm_email" name="confirm_email">
-            <label for="message">Ask us:</label>
-            <textarea type="text" id="message" name="message"></textarea>
-            <input type="submit" value="Submit" class="sub_btn" id="post-data-btn">
-          </form>
+                <div class="contact_form--element">
+                    <label for="fname">Your first name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <div class="name">Enter your name</div>
+                </div>
+                <div class="contact_form--element">
+                    <label for="email">Your e-mail adress:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="email">Please check e-mail</div>
+                </div>
+                <div class="contact_form--element">
+                    <label for="confirm_email">Confirm e-mail:</label>
+                    <input type="email" id="confirm_email" name="confirm_email">
+                    <div class="email">Please check e-mail</div>
+                </div>
+                <div class="contact_form--element">
+                    <label for="message">Your message:</label>
+                    <textarea type="text" id="message" name="message"></textarea>
+                    <div class="msg">Fill out this field</div>
+                </div>
+                    <input type="submit" value="Wyślij" class="sub_btn" id="post-data-btn">
+            </form>
 
         </article>
 

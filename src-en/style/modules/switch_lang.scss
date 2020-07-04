@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: $primary-bkg-color;
+    z-index: $z-index-switch-lang;
     box-shadow: 0.07em .07em .1em $secondary-bkg-color;
     border: none;
     width: auto;

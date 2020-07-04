@@ -4,6 +4,7 @@
 .modal {
     display: none;
     position: relative;
+    z-index: $z-index-modal;
 }
 
 .modal_backdrop {

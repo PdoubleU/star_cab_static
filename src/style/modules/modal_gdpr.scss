@@ -2,18 +2,18 @@
 @import './btn_model.scss';
 @import './modal_window_model.scss';
 
-.modal {
+.modal--gdpr {
     @include modal_model;
 }
 
-.modal_backdrop {
+.modal_backdrop--gdpr {
     @include modal_bkdr_model;
 }
 
-.modal_body {
+.modal_body--gdpr {
     @include modal_body_model;
 }
 
-.modal_btn {
+.modal_btn--gdpr {
     @include btn;
 }

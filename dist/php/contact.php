@@ -49,11 +49,11 @@
 
       <article id="contact" class="column_form">
 
-        <div id="modal" class="modal">
+        <div id="modal" class="modal" aria-label="form submit result">
           <div class="modal_backdrop"></div>
           <div class="modal_body">
 
-          <button id="close" class="modal_btn">Zamknij</button>
+          <button id="close" class="modal_btn" aria-label="close modal window">Zamknij</button>
 
           </div>
         </div>
@@ -64,22 +64,22 @@
         <div class="contact_form--element">
           <label for="fname">Podaj swoje imię:</label>
             <input type="text" id="fname" name="fname">
-            <div class="name">Wprowadź imię</div>
+            <div class="name" aria-label="enter first name">Wprowadź imię</div>
         </div>
         <div class="contact_form--element">
           <label for="email">Twój adres e-mail:</label>
             <input type="email" id="email" name="email">
-            <div class="email">Błąd w adresie email</div>
+            <div class="email" aria-label="incorrect email">Błąd w adresie email</div>
         </div>
         <div class="contact_form--element">
           <label for="confirm_email">Powtórz e-mail:</label>
             <input type="email" id="confirm_email" name="confirm_email">
-            <div class="email">Błąd w adresie email</div>
+            <div class="email" aria-label="incorrect email">Błąd w adresie email</div>
         </div>
         <div class="contact_form--element">
           <label for="message">Zadań pytanie:</label>
             <textarea type="text" id="message" name="message"></textarea>
-            <div class="msg">Uzupełnij to pole</div>
+            <div class="msg" aria-label="enter message">Uzupełnij to pole</div>
         </div>
             <input type="submit" value="Wyślij" class="sub_btn" id="post-data-btn">
         </form>

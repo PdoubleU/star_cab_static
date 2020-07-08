@@ -8,3 +8,4 @@ import {closeModal} from "./js-components/close_modal";
 import {changeBorder} from "./js-components/change_input_border";
 import {hideAlert} from "./js-components/hide_alert";
 import {slideGDPR} from "./js-components/side_gdpr";
+import {handleGDPR, readGDPR} from "./js-components/handle_gdpr";

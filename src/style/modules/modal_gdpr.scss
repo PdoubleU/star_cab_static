@@ -12,12 +12,15 @@
 
 .modal_body--gdpr {
     @include modal_body_model;
-    overflow: scroll;
     height: 90vh;
     width: 80vw;
-    font-size: .675rem;
 }
 
 .modal_btn--gdpr {
     @include btn;
+}
+.content-container {
+    font-size: .675rem;
+    padding: 2em 3em;
+    overflow-y: scroll;
 }

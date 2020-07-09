@@ -1,7 +1,7 @@
 @import './variables.scss';
 @import './btn_model.scss';
 
-.slide_bar_gdpr {
+.side_bar_gdpr {
     position: fixed;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
         margin: 0em 0em 1em;
     }
 }
-.slide_bar_gdpr--active {
+.side_bar_gdpr--active {
     left: 3em;
 }
 .button_gdpr {

@@ -3,11 +3,11 @@ import $ from 'jquery';
 const $OPEN_GDPR = $('#gdpr_read');
 const $ACCEPT_GDPR = $('#gdpr_accept');
 const $READ_AND_ACCEPT = $('.modal_btn--gdpr');
-var $slideBar = $('.slide_bar_gdpr');
+var $sideBar = $('.side_bar_gdpr');
 
 export const acceptGDPR = () => {
-    $slideBar.attr('value', 'confirmed');
-    $('.slide_bar_gdpr').removeClass('slide_bar_gdpr--active');
+    $sideBar.attr('value', 'confirmed');
+    $sideBar.removeClass('side_bar_gdpr--active');
 }
 
 export const readGDPR = () => {

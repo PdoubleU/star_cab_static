@@ -1,10 +1,10 @@
 import $ from "jquery";
 
-const $SLIDE_BAR_VAL = $('.slide_bar_gdpr').attr('value');
+const $SIDE_BAR_VAL = $('.side_bar_gdpr').attr('value');
 
 export const showGDPR = () => {
-  if($SLIDE_BAR_VAL === 'unconfirmed') {
-    $('.slide_bar_gdpr').toggleClass('slide_bar_gdpr--active');
+  if($SIDE_BAR_VAL === 'unconfirmed') {
+    $('.side_bar_gdpr').toggleClass('side_bar_gdpr--active');
   }
 };
 

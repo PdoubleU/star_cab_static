@@ -47,7 +47,7 @@
 
     <main id="content">
 
-          <article id="home" class="column">
+          <article id="about_us" class="column">
             <h2>Kim jesteśmy...</h2>
               <p>
                 Zajmujemy się profesjonalnym przewozem
@@ -59,7 +59,7 @@
                 angielsku i niemiecku.
               </p>
           </article>
-          <article id="home"  class="column">
+          <article id="about_us"  class="column">
             <h2>Dokąd jeździmy...</h2>
               <p>
                 Z nami możesz pojechać praktycznie w każde miejsce,
@@ -71,7 +71,7 @@
                 transport dla większej liczby pasażerów!
               </p>
           </article>
-          <article id="home"  class="column">
+          <article id="about_us"  class="column">
             <h2>Kiedy jeździmy...</h2>
               <p>
                 Jesteśmy do dyzspozycji 24 godziny na dobę.

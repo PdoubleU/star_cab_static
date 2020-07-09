@@ -45,6 +45,28 @@
         </div>
     </header>
 
+    <aside id="side_bar" class="side_bar_gdpr" value="unconfirmed">
+        <p>
+            This website use cookies:
+        </p>
+        <button id="gdpr_read" class="button_gdpr" aria-label="read more about gdpr and cookies">Read more...</button>
+        <button id="gdpr_accept" class="button_gdpr" aria-label="accept terms and condition for gdpr and cookies">I accept cookies</button>
+    </aside>
+
+    <article id="modal_gdpr">
+        <div id="modal" class="modal--gdpr">
+            <div class="modal_backdrop--gdpr"></div>
+            <div class="modal_body--gdpr">
+                <button id="close" class="modal_btn--gdpr">I understand and accept</button>
+                <div class="content-container">
+                    <!-- here is loaded content with terms in conditons of gdpr located in directory ./php/gdpr.php -->
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+
     <main id="content">
 
         <article id="about_us" class="column">

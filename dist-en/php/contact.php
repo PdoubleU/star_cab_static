@@ -41,7 +41,7 @@
             <div class="motto">
                 <h2 class="motto_header">Wherever you need to go</h2>
                 <img class="logo" src="./images/logo.svg" alt="company's logo">
-              </div
+            </div>
         </div>
     </header>
 
@@ -81,7 +81,7 @@
                     <textarea type="text" id="message" name="message"></textarea>
                     <div class="msg">Fill out this field</div>
                 </div>
-                    <input type="submit" value="Wyślij" class="sub_btn" id="post-data-btn">
+                    <input type="submit" value="Submit" class="sub_btn" id="post-data-btn">
             </form>
 
         </article>

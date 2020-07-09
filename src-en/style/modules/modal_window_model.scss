@@ -1,0 +1,36 @@
+@mixin modal_model {
+    display: none;
+    position: relative;
+    z-index: $z-index-modal;
+}
+
+@mixin modal_bkdr_model {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(200, 50, 10, 0.5);
+}
+
+@mixin modal_body_model {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1.5em 1em;
+    background-color:white;
+    overflow: auto;
+
+    @media (min-width: 43.75em) {
+        .modal_body {
+            padding: 2em 3em;
+        }
+    }
+}

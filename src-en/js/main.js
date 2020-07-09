@@ -7,3 +7,5 @@ import {sentData} from "./js-components/submit_form";
 import {closeModal} from "./js-components/close_modal";
 import {changeBorder} from "./js-components/change_input_border";
 import {hideAlert} from "./js-components/hide_alert";
+import {showGDPR} from "./js-components/side_gdpr";
+import {acceptGDPR, readGDPR, closeGDPR} from "./js-components/handle_gdpr";

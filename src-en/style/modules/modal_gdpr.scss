@@ -1,0 +1,26 @@
+@import './variables.scss';
+@import './btn_model.scss';
+@import './modal_window_model.scss';
+
+.modal--gdpr {
+    @include modal_model;
+}
+
+.modal_backdrop--gdpr {
+    @include modal_bkdr_model;
+}
+
+.modal_body--gdpr {
+    @include modal_body_model;
+    height: 90vh;
+    width: 80vw;
+}
+
+.modal_btn--gdpr {
+    @include btn;
+}
+.content-container {
+    font-size: .675rem;
+    padding: 2em 3em;
+    overflow-y: scroll;
+}

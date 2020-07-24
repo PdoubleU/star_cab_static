@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Star Cab</title>
-    <meta name="description" content="Strona wizytówka firmy świadczącej usługi transportowe i przewozowe na terenie miasta Wrocław oraz w Polsce">
+    <meta name="description" content="Firma świadcząca usługi transportowe i przewozowe na terenie miasta Wrocław oraz w Polsce">
     <meta name="keywords" content="transport osobowy, pasażerski, transport na terenie miasta Wrocław, transport krajowy w Polsce, transport hotelowy, usługi transportu i przewozu">
     <meta name="author" content="Piotr Witasik">
     <meta charset="UTF-8" content="text/html" lang="pl">

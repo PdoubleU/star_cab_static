@@ -25,6 +25,9 @@ The followed tools were used to finalize project:
     3. Webpack - to put all project's elements together into joined files ready to deploy
     4. Many popular plugins for Webpack to make production more efficient and easier
 
+## Security:
+
+I used simple filtering for HTML's special characters. One filter is used in the JavaScript to prevent the XSS's attacks and another one is used in PHP's file responsible for handling with POST's requests - it sends data with a neutralized special characters.
 
 ## Interesting facts about project:
 

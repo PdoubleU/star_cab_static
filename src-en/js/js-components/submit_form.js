@@ -13,7 +13,7 @@ String.prototype.stripHTML = function () {
 export function sentData(e) {
     e.preventDefault();
     var data = $('.contact_form').serialize();
-    const $FNAME = $('#fname').val().stripHTML().stripHTML();
+    const $FNAME = $('#fname').val().stripHTML();
     const $EMAIL_ONE = $('#email').val().stripHTML();
     const $EMAIL_TWO = $('#confirm_email').val().stripHTML();
     const $MSG = $('#message').val().stripHTML();

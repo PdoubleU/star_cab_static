@@ -7,10 +7,9 @@
 					' text/plain;charset="UTF-8"'.
 					"\nContent-Transfer-Encoding: 8bit";
 
-	$fname = $_POST['fname'];
-	$email = $_POST['email'];
-	$confirm_email = $_POST['confirm_email'];
-	$message = $_POST['message'];
+	$fname = htmlspecialchars($_POST['fname'], ENT_QUOTES);
+	$email = htmlspecialchars($_POST['email'], ENT_QUOTES);
+	$message = htmlspecialchars($_POST['message'], ENT_QUOTES);
 	$document_root = $_SERVER['DOCUMENT_ROOT'];
 	$output = $fname. "\t".$email. "\t".$message. "\n";				//("$document_root/./data/data_get_form.txt", 'ab') directory for server
 	$wp = fopen("$document_root/./data/data_get_form.txt", 'ab'); //before moving on server check directory!!! it may cause problems with writing/reading file
@@ -18,8 +17,6 @@
 	flock($wp, LOCK_EX);
 	fwrite($wp, $output);
 	fclose($wp);
-
-
 
 	mail($to, $subject, $msg_details, $header);
 ?>

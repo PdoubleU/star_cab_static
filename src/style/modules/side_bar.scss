@@ -14,7 +14,7 @@
     color: $white-font;
     box-shadow: .06em .04em .07em $tertiary-bkg-color;
     transform: translateY(-50%);
-    transition: left 3s ease-in-out;
+    transition: left .5s ease-out;
     z-index: $z-index-modal;
     & > p {
         margin:  .5em .5em;
@@ -23,6 +23,7 @@
     }
 }
 .side_bar_gdpr--active {
+    transition: left 1.6s ease-in-out;
     left: 3em;
 }
 .button_gdpr {
@@ -32,8 +33,9 @@
     font-size: .675rem;
     padding: .3em .6em;
     &:hover {
-        background-color: $secondary-bkg-color;
-        transition: .2s ease-in;
+        background-color: $tertiary-bkg-color;
+        color: $white-font;
+        transition: .2s ease-in-out;
     }
     button {
         appearance: none;

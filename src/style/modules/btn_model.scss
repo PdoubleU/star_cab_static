@@ -13,6 +13,7 @@
     appearance: none;
     &:hover {
         background-color: $tertiary-bkg-color;
+        color: $white-font;
         transition: .2s ease-in;
     }
     button {

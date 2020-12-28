@@ -3,24 +3,25 @@
 @import './modal_window_model.scss';
 
 .modal--gdpr {
-    @include modal_model;
+	@include modal_model;
 }
 
 .modal_backdrop--gdpr {
-    @include modal_bkdr_model;
+	@include modal_bkdr_model;
 }
 
 .modal_body--gdpr {
-    @include modal_body_model;
-    height: 90vh;
-    width: 80vw;
+	@include modal_body_model;
+	height: 90vh;
+	width: 80vw;
 }
 
 .modal_btn--gdpr {
-    @include btn;
+	@include btn;
+	margin-top: 1em;
 }
 .content-container {
-    font-size: .675rem;
-    padding: 2em 3em;
-    overflow-y: scroll;
+	font-size: .675rem;
+	padding: 2em 3em;
+	overflow-y: scroll;
 }

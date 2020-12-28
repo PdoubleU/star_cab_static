@@ -16,34 +16,35 @@
 @import './modules/side_bar.scss';
 
 //root style block has box-sizing set to border-box to avoid unexpected behaviour for box elements:
-:root{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-//calc() method in font size assures that the font size will be respond on each window size change
-    font-size: calc(.6em + 1vw);
-    line-height: 1.4;
+:root {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	//calc() method in font size assures that the font size will be respond on each window size change
+	font-size: calc(.6em + 1vw);
+	line-height: 1.4;
 }
-html{
-    position:relative;
-    min-height: 100%;
-  }
-body{
-    background-color: $primary-bkg-color;
-//removes from body initial margin and padding
-    margin: 0;
-    padding: 0;
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	background-color: $primary-bkg-color;
+	//removes from body initial margin and padding
+	margin: 0;
+	padding: 0;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 header {
-    user-select: none;
+	user-select: none;
 }
 a:link,
 a:visited,
 a:hover,
 a:checked {
-    color: $main-font-color;
+	text-decoration: none;
+	color: $main-font-color;
 }

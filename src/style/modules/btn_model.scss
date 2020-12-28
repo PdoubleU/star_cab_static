@@ -1,22 +1,21 @@
 @mixin btn {
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 2em;
-    padding: .6em 1.2em;
-    align-self: center;
-    letter-spacing: .12rem;
-    font-size: inherit;
-    text-transform: uppercase;
-    border: none;
-    height: auto;
-    background-color: $secondary-bkg-color;
-    appearance: none;
-    &:hover {
-        background-color: $tertiary-bkg-color;
-        color: $white-font;
-        transition: .2s ease-in;
-    }
-    button {
-        appearance: none;
-    }
+	cursor: pointer;
+	display: inline-block;
+	padding: .6em 1.2em;
+	align-self: center;
+	letter-spacing: .12rem;
+	font-size: inherit;
+	text-transform: uppercase;
+	border: none;
+	height: auto;
+	background-color: $secondary-bkg-color;
+	appearance: none;
+	&:hover {
+		background-color: $tertiary-bkg-color;
+		color: $white-font;
+		transition: .2s ease-in;
+	}
+	button {
+		appearance: none;
+	}
 }

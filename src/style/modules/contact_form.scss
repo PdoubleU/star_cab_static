@@ -2,46 +2,47 @@
 @import './btn_model.scss';
 
 .column_form {
-    display: flex;
-    flex-direction: column;
-    width: 75vw;
+	display: flex;
+	flex-direction: column;
+	width: 75vw;
 }
 .contact_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2em;
-    & > .sub_btn {
-        @include btn;
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 2em;
+	& > .sub_btn {
+		@include btn;
+		margin-top: 1em;
+	}
 }
 .contact_form--element {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    & > label {
-        margin-top: 1em;
-    }
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	& > label {
+		margin-top: 1em;
+	}
 }
 textarea {
-    width: 75vw;
-    resize: vertical;
-    font-size: inherit;
-    font-family: inherit;
-    border: 1px solid $main-font-color;
+	width: 75vw;
+	resize: vertical;
+	font-size: inherit;
+	font-family: inherit;
+	border: 1px solid $main-font-color;
 }
 input {
-    height: 2em;
-    font-size: inherit;
-    appearance: none;
-    border: 1px solid $main-font-color;
+	height: 2em;
+	font-size: inherit;
+	appearance: none;
+	border: 1px solid $main-font-color;
 }
 
-@media (min-width:  43.75em){
-    .column_form {
-        width: 50vw;
-    }
-    textarea {
-    width: 50vw;
-    }
+@media (min-width: 43.75em) {
+	.column_form {
+		width: 50vw;
+	}
+	textarea {
+		width: 50vw;
+	}
 }

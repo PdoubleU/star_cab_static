@@ -1,10 +1,10 @@
 import $ from "jquery";
 import { handleClick } from "./burger-button.js";
 
-var $home = $('.home');
-var $about_us = $('.about_us');
-var $tourist_services = $('.tourist_services');
-var $contact = $('.contact');
+const $HOME = $('.home');
+const $ABOUT_US = $('.about_us');
+const $SERVICES = $('.tourist_services');
+const $CONTACT = $('.contact');
 
 export default function changeContent(e){
     e.preventDefault();
@@ -14,11 +14,12 @@ export default function changeContent(e){
     $('#content').load(`./php/${$fileName}.php ${$className}`);
     $('html').animate({scrollTop: $contentOffset}, 500);
     $('body').animate({scrollTop: $contentOffset}, 500);
+    //call habdleClick to close the menu list - user's screen is free of no needed content
     handleClick();
     return false;
   };
 
-$home.click(changeContent);
-$about_us.click(changeContent);
-$tourist_services.click(changeContent);
-$contact.click(changeContent);
+$HOME.on('click', changeContent);
+$ABOUT_US.on('click', changeContent);
+$SERVICES.on('click', changeContent);
+$CONTACT.on('click', changeContent);

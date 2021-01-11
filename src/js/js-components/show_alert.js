@@ -1,5 +1,5 @@
 import $ from "jquery";
 
-export const showAlert = (val) => {
+export function showAlert(val) {
     $(val).css({ visibility: 'visible'});
 };

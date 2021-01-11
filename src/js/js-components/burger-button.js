@@ -1,12 +1,12 @@
 import $ from "jquery";
 
-var $menu_button = $('.menu-btn');
-var $button_inner = $('.menu-btn__inner');
-var $navigation = $('.top-nav');
+const $MENU_BTN = $('.menu-btn');
+const $BTN_INNER = $('.menu-btn__inner');
+const $NAV = $('.top-nav');
 
-export const handleClick = () => {
-  $button_inner.toggleClass('menu-btn__inner--active');
-  $navigation.toggleClass('top-nav--active');
+export function handleClick() {
+  $BTN_INNER.toggleClass('menu-btn__inner--active');
+  $NAV.toggleClass('top-nav--active');
 }
 
-$menu_button.click(handleClick);
+$MENU_BTN.on('click', handleClick);

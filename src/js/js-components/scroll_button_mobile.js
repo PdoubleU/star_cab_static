@@ -1,12 +1,13 @@
 import $ from "jquery";
 
-let $window = $(window);
-let $scroll_btn = $('.scroll_btn');
+const $WINDOW = $(window);
+const $SCRL_BTN = $('.scroll_btn');
 
 export function scrollTop(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
 };
+
 export function scroll() {
     if ($window.scrollTop() > 300)
     {
@@ -17,5 +18,6 @@ export function scroll() {
         $scroll_btn.removeClass('scroll_btn--active');
     }
 };
-$window.scroll(scroll);
-$scroll_btn.click(scrollTop);
+
+$WINDOW.on('scroll', scroll);
+$SCRL_BTN.on('scroll', scrollTop);

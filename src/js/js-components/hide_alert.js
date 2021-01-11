@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-var $main = $('main');
+const $MAIN = $('main');
 
 export const hideAlert = () => {
     $(".name").css({ visibility: 'hidden'});
@@ -8,6 +8,6 @@ export const hideAlert = () => {
     $(".msg").css({ visibility: 'hidden'});
 };
 
-$main.on("focusin", 'input', hideAlert);
-$main.on("focusin", 'textarea', hideAlert);
+$MAIN.on("focusin", 'input', hideAlert);
+$MAIN.on("focusin", 'textarea', hideAlert);
 

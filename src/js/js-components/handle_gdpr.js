@@ -3,24 +3,24 @@ import $ from 'jquery';
 const $OPEN_GDPR = $('#gdpr_read');
 const $ACCEPT_GDPR = $('#gdpr_accept');
 const $READ_AND_ACCEPT = $('.modal_btn--gdpr');
-var $sideBar = $('.side_bar_gdpr');
+const $SIDE_BAR = $('.side_bar_gdpr');
 
-export const acceptGDPR = () => {
-    $sideBar.attr('value', 'confirmed');
-    $sideBar.removeClass('side_bar_gdpr--active');
+export function acceptGDPR() {
+    $SIDE_BAR.attr('value', 'confirmed');
+    $SIDE_BAR.removeClass('side_bar_gdpr--active');
 }
 
-export const readGDPR = () => {
+export function readGDPR() {
     acceptGDPR();
     $('.modal--gdpr').css({display: "flex"});
     $('.content-container').load('./php/gdpr.php');
 }
 
-export const closeGDPR = () => {
+export function closeGDPR() {
     $('.modal--gdpr').css({display: "none"});
 }
 
-$ACCEPT_GDPR.click(acceptGDPR);
-$OPEN_GDPR.click(readGDPR);
-$READ_AND_ACCEPT.click(closeGDPR);
+$ACCEPT_GDPR.on('click', acceptGDPR);
+$OPEN_GDPR.on('click', readGDPR);
+$READ_AND_ACCEPT.on('click', closeGDPR);
 

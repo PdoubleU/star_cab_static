@@ -1,5 +1,8 @@
 # Star Cab official website
 
+![GitHub Logo](/images/starcab.bmp)
+
+
 Website presents local transportation company. Provides simple information (adress, services, etc.) and allows to contact with the company owners by form. It is available in two languages: polish and english.
 
 

@@ -48,23 +48,23 @@
     <main id="content">
 
         <article id="about_us" class="column">
-            <h2>Who are we...</h2>
+            <h2>Quick contact:</h2>
                 <p>
-                We have been on the market over 15 years.
-                These time we have transported many customers in Wrocław, from Wrocław and to Wrocław.
-                You can trust us.
+                Do You need a service now? Just call: +48 605 434 141.
+                We might be busy at the moment, thus call back as soon as we get a breath. Contact form guarantee response within 24h.
                 </p>
         </article>
         <article id="about_us"  class="column">
-            <h2>Where do we go...</h2>
+            <h2>Our location:</h2>
                 <p>
-                Whit us you can reach almost each place in Europe.
+                We operate in Wrocław, Lower Silesia, and this is our headquarter.
+                If You need to be picked up in another city in Poland, it's not an issue.
                 </p>
         </article>
         <article id="about_us"  class="column">
-            <h2>When do we drive...</h2>
+            <h2>Foregin languages:</h2>
                 <p>
-                We are available 24/7, holidays and weekends include.
+                Is Your customer a foreginer? No worries, our drivers speak german and english.
                 </p>
         </article>
 

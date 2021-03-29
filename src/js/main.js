@@ -9,3 +9,4 @@ import {changeBorder} from "./js-components/change_input_border";
 import {hideAlert} from "./js-components/hide_alert";
 import {slideGDPR} from "./js-components/side_gdpr";
 import {acceptGDPR, readGDPR, closeGDPR} from "./js-components/handle_gdpr";
+import {set_storage} from './js-components/set_storage';

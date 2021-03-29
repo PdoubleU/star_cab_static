@@ -19,6 +19,14 @@
 .modal_btn--gdpr {
 	@include btn;
 	margin-top: 1em;
+	background-color: $primary-bkg-color;
+	color: $main-font-color;
+	border-color: $main-font-color;
+	&:hover {
+		background-color: $secondary-bkg-color;
+		color: $minor-font-color;
+		border-color: $minor-font-color;
+	}
 }
 .content-container {
 	font-size: .675rem;

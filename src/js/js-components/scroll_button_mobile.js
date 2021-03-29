@@ -9,13 +9,13 @@ export function scrollTop(e) {
 };
 
 export function scroll() {
-    if ($window.scrollTop() > 300)
+    if ($WINDOW.scrollTop() > 300)
     {
-        $scroll_btn.addClass('scroll_btn--active');
+        $SCRL_BTN.addClass('scroll_btn--active');
     }
     else
     {
-        $scroll_btn.removeClass('scroll_btn--active');
+        $SCRL_BTN.removeClass('scroll_btn--active');
     }
 };
 

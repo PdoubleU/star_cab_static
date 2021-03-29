@@ -48,38 +48,25 @@
     <main id="content">
 
           <article id="about_us" class="column">
-            <h2>Kim jesteśmy...</h2>
+            <h2>Szybki kontakt:</h2>
               <p>
-                Zajmujemy się profesjonalnym przewozem
-                pasażerskim od 15 lat.
-                Doświadczeni kierowcy i najlepsze
-                samochody są do dyspozycji
-                naszych klientów.
-                Nie boimy się rozmawiać po
-                angielsku i niemiecku.
+                Jeśli potrzebujesz usługi już teraz, zadzwoń: +48 605 434 141
+                Możemy być zajęci, więc oddzwonimy jak tylko złapiemy oddech.
+                Kontakt przez formularz to odpowiedź w ciągu 24 godzin.
               </p>
           </article>
           <article id="about_us"  class="column">
-            <h2>Dokąd jeździmy...</h2>
+            <h2>Nasza lokalizacja:</h2>
               <p>
-                Z nami możesz pojechać praktycznie w każde miejsce,
-                które tylko sobie zażyczysz.
-                Musisz znaleź się jeszcze dzisiaj w Berlinie?
-                Zadzwoń i zamów kierowcę!
-                Potrzebujesz zabrać grupę kontrachentów na wycieczkę
-                po okolicy? Zadzwoń i zorganizuj z nami
-                transport dla większej liczby pasażerów!
+                Znajdziesz nas we Wrocławiu i stąd głównie operujemy.
+                Ale jeśli potrzebujesz wyjechać z innej miejscowości w Polsce, to dla nas nie jest problem.
               </p>
           </article>
           <article id="about_us"  class="column">
-            <h2>Kiedy jeździmy...</h2>
+            <h2>Jakie znamy języki:</h2>
               <p>
-                Jesteśmy do dyzspozycji 24 godziny na dobę.
-                Skontaktuj się drogą mailową a odpowiemy w
-                ciągu doby.
-                Jeśli podtrzebujesz transportu na teraz,
-                zadzwoń bezpośrednio na numer podany w
-                zakładce kontakt.
+                Nie martw się, gdy Twój klient jest obcokrajowcem.
+                Nasi kierowcy świetnie mówią po niemiecku oraz angielsku.
               </p>
           </article>
     </main>

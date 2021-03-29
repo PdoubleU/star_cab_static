@@ -1,12 +1,12 @@
 //create variables for main colors, fonts and other attributes often used in stylesheet:
 
 $primary-bkg-color: hsl(0, 0, 100);
-$secondary-bkg-color: hsl(200, 10, 50);
+$secondary-bkg-color: rgb(46, 53, 56);
 $tertiary-bkg-color: hsl(200, 10, 25);
 $alert-bkg-color: hsl(0, 100, 85);
 $alert-font-color: hsl(0, 100, 50);
 $main-font-color: hsl(240, 0, 15);
-$minor-font-color: hsl(220, 0, 15);
+$minor-font-color: rgb(204, 204, 204);
 $white-font: hsl(0, 0, 100);
 $z-index-navigation: 100;
 $z-index-burgerbutton: 200;

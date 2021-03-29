@@ -6,7 +6,7 @@
 	letter-spacing: .12rem;
 	font-size: inherit;
 	text-transform: uppercase;
-	border: none;
+	border: 1px solid transparent;
 	height: auto;
 	background-color: $secondary-bkg-color;
 	appearance: none;
@@ -14,6 +14,7 @@
 		background-color: $tertiary-bkg-color;
 		color: $white-font;
 		transition: .2s ease-in;
+		border: 1px solid $primary-bkg-color;
 	}
 	button {
 		appearance: none;

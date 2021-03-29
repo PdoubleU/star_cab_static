@@ -3,17 +3,25 @@
 @import './modal_window_model.scss';
 
 .modal {
-    @include modal_model;
+	@include modal_model;
 }
 
 .modal_backdrop {
-    @include modal_bkdr_model;
+	@include modal_bkdr_model;
 }
 
 .modal_body {
-    @include modal_body_model;
+	@include modal_body_model;
 }
 
 .modal_btn {
-    @include btn;
+	@include btn;
+	background-color: $primary-bkg-color;
+	color: $main-font-color;
+	border-color: $main-font-color;
+	&:hover {
+		background-color: $secondary-bkg-color;
+		color: $minor-font-color;
+		border-color: $minor-font-color;
+	}
 }

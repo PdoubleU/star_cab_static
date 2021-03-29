@@ -3,7 +3,7 @@
 ![GitHub Logo](/images/starcab.bmp)
 
 
-[Lets go to Quora](starcab.wroclaw.pl)
+[Lets go to live preview](starcab.wroclaw.pl)
 
 
 Website presents local transportation company. Provides simple information (adress, services, etc.) and allows to contact with the company owners by form. It is available in two languages: polish and english.
